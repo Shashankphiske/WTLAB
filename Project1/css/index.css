@@ -27,6 +27,12 @@
     gap: 35px;
     font-weight :bold;
     align-items: center;
+    
+}
+
+.nav6:hover{
+    font-size : 20px;
+
 }
 
 .options2{
@@ -59,6 +65,7 @@
     border-radius: 10px;
 }
 .options3{
+    width: 15vw;
     display: flex;
     gap: 20px;
     font-weight: lighter;
