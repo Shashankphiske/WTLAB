@@ -1,0 +1,22 @@
+.mainouter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    
+}
