@@ -15,12 +15,12 @@
                 <p>Fill in your details to register with us</p>
             </div>
             <div class="input">
-                <input type="text" placeholder="Name" id="name" class="name field">
+                <input type="text" placeholder="Name" id="name" class="name field" onchange={namechange()} onfocus={namechange()} onkeypress={namechange()}>
                 <input type="email" placeholder="Email" id="email" class="email field">
                 <input type="text" placeholder="Class" id="class" class="class field">
                 <input type="text" placeholder="Roll No" id="rollno" class="rollno field">
             </div>
-            <button class="button">Submit</button>
+            <button class="button" onclick={register()}>Submit</button>
         </div>
     </div>
 </body>

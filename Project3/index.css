@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     height: 90vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .outer{
@@ -13,10 +14,48 @@
     width: 30vw;
     border: 1px solid gray;
     border-radius: 10px;
+    gap: 10px;
 }
 
 .heading{
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 70%;
+}
+
+h1{
+    font-size :xx-large;
+    color:rgb(123, 206, 234);
+    font-weight:400;
+    margin-bottom: -5px;
+}
+
+p{
+    font-size: medium;
+}
+
+.field{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 5px;
+    border: 1px solid gray;
+}
+
+button{
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(148, 237, 237);
+    width: 72%;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-size:15px;
 }
