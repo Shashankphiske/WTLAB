@@ -43,12 +43,12 @@ app.use(
 );
 
 app.post("/sendDetails", (req, res) => {
-  const { firstName, lastName, email, password } = req.body;
+  const { firstName, lastName, email, password, confirmpassword, phonenumber, address, gender, date, secret } = req.body;
 
   res.json({
     success : true,
     body : {
-      firstName, lastName, email, password
+      firstName, lastName, email, password, confirmpassword, phonenumber, address, gender, date, secret
     }
   });
 })

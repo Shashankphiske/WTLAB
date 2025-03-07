@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="./calculaator.css">
-    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="calculaator.css">
+    <script src="calculator.js" defer></script>
 </head>
 <body>
     <div class="container">
         <div class="calculator-body">
-            <form name="f1">
-                <input type="text" class="inputfield" name="inputfield" value="" readonly>
+            <form name="calc">
+                <input type="text" class="inputfield" name="display" value="" readonly>
                 <div class="number-body">
-                    <input value="1" class="numb b1" onclick={getValue(1)} type="button"/>
-                    <input value="2" class="numb b2" onclick={getValue(2)} type="button"/>
-                    <input value="3" class="numb b3" onclick={getValue(3)} type="button"/>
-                    <input value="4" class="numb b4" onclick={getValue(4)} type="button"/>
-                    <input value="5" class="numb b5" onclick={getValue(5)} type="button"/>
-                    <input value="6" class="numb b6" onclick={getValue(6)} type="button"/>
-                    <input value="7" class="numb b7" onclick={getValue(7)} type="button"/>
-                    <input value="8" class="numb b8" onclick={getValue(8)} type="button"/>
-                    <input value="9" class="numb b9" onclick={getValue(9)} type="button"/>
-                    <input value="0" class="numb b0" onclick={getValue(0)} type="button"/>
-                    <button class="numb">C</button>
-                    <input value="+" class="numb b+" onclick={getValue(-1)} type="button"/>
-                    <input value="-" class="numb b-" onclick={getValue(-2)} type="button"/>
-                    <input value="=" class="numb b=" onclick={printVal()} type="button"/>
+                    <input value="1" class="numb" onclick="addToDisplay(1)" type="button">
+                    <input value="2" class="numb" onclick="addToDisplay(2)" type="button">
+                    <input value="3" class="numb" onclick="addToDisplay(3)" type="button">
+                    <input value="4" class="numb" onclick="addToDisplay(4)" type="button">
+                    <input value="5" class="numb" onclick="addToDisplay(5)" type="button">
+                    <input value="6" class="numb" onclick="addToDisplay(6)" type="button">
+                    <input value="7" class="numb" onclick="addToDisplay(7)" type="button">
+                    <input value="8" class="numb" onclick="addToDisplay(8)" type="button">
+                    <input value="9" class="numb" onclick="addToDisplay(9)" type="button">
+                    <input value="0" class="numb" onclick="addToDisplay(0)" type="button">
+                    <input value="+" class="numb" onclick="addToDisplay('+')" type="button">
+                    <input value="-" class="numb" onclick="addToDisplay('-')" type="button">
+                    <input value="=" class="numb" onclick="calculate()" type="button">
+                    <input value="C" class="numb" onclick="clearDisplay()" type="button">
                 </div>
             </form>
         </div>

@@ -1,15 +1,22 @@
-<div class="screen">
-  <form action="http://localhost:4200/sendDetails" method="post" class="maincontainer">
-    <div class="container-1">
-      <h1>Registeration Form</h1>
-      <p>Enter your correct details</p>
-    </div>
-    <div class="container-2">
-      <input type="text" placeholder="First Name" name="firstName">
-      <input type="text" placeholder="Last Name" name="lastName">
-      <input type="email" placeholder="Email" name="email">
-      <input type="text" placeholder="Password" name="password">
-    </div>
-    <button>Submit</button>
-  </form>
-</div>
+
+  <div class="screen">
+    <form action="http://localhost:4200/sendDetails" method="post" class="maincontainer">
+      <div class="container-1">
+        <h1>Registeration Form</h1>
+        <p>Enter your correct details</p>
+      </div>
+      <div class="container-2">
+        <input type="text" placeholder="First Name" name="firstName">
+        <input type="text" placeholder="Last Name" name="lastName">
+        <input type="email" placeholder="Email" id="email" onchange={checkMail} name="email">
+        <input type="text" placeholder="Phone Number" name="phonenumber">
+        <input type="text" placeholder="Password" name="password">
+        <input type="text" placeholder="Confirm Password" name="confirmpassword">
+        <input type="text" placeholder="Gender" name="gender">
+        <input type="date" placeholder="" name="dob">
+        <input type="text" placeholder="Address" name="address">
+        <input type="text" placeholder="Secret Key" name="secret">
+      </div>
+      <button>Submit</button>
+    </form>
+  </div>

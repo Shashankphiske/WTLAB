@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,19 +6,19 @@
     height: 100vh;
 }
 
-.calculator-body{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.calculator-body {
     background-color: white;
     width: 25vw;
     border-radius: 10px;
     border: 1px solid black;
     height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.number-body{
+.number-body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,17 +26,16 @@
     flex-wrap: wrap;
 }
 
-.numb{
+.numb {
     padding: 40px;
     border-radius: 100%;
 }
 
-.inputfield{
+.inputfield {
     width: 95%;
     height: 15vh;
     border-radius: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 5px;
     margin-top: -20px;
     margin-bottom: 10px;
 }
