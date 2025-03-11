@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class = "maincontainer">
+        <div class = "container">
+            <h1>Inventory Information</h1>
+            <input type="text" placeholder="Item Name" class="input" id="name">
+            <input type="text" placeholder="Item Weight" class="input" id="weight">
+            <input type="text" placeholder="Item Cost" class="input" id="cost">
+            <input type="text" placeholder="Item Type" class="input" id="type">
+            
+            <input type="submit" value="Add Item" class="button" onclick={addItem()}>
+            
+        </div>
+        <div class="list" id="list">
+            <div class="table">
+                <h3>Name</h3>
+                <h3>Weight</h3>
+                <h3>Cost</h3>
+                <h3>Type</h3>
+            </div>     
+            <div class="content" id="content">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
