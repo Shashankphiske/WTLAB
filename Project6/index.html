@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <script>
+        function validateForm() {
+            let name = document.forms["hospitalForm"]["name"].value;
+            let address = document.forms["hospitalForm"]["address"].value;
+            let email = document.forms["hospitalForm"]["email"].value;
+            let phone = document.forms["hospitalForm"]["phone no"].value;
+            let department = document.forms["hospitalForm"]["department"].value;
+            let errorMsg = "";
+
+            if (name == "" || address == "" || email == "" || phone == "" || department == "") {
+                errorMsg += "All fields are required.\n";
+            }
+            let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (!email.match(emailPattern)) {
+                errorMsg += "Invalid email format.\n";
+            }
+            let phonePattern = /^[0-9]{10}$/;
+            if (!phone.match(phonePattern)) {
+                errorMsg += "Phone number must be 10 digits.\n";
+            }
+
+            if (errorMsg != "") {
+                alert(errorMsg);
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>Hospital Management System</h2>
+
+    <form name="hospitalForm" method="POST" onsubmit="return validateForm()">
+        <label>Name:</label>
+        <input type="text" name="name"><br><br>
+
+        <label>Address:</label>
+        <input type="text" name="address"><br><br>
+
+        <label>Email:</label>
+        <input type="text" name="email"><br><br>
+
+        <label>Phone:</label>
+        <input type="text" name="phone"><br><br>
+
+        <label>Department:</label>
+        <select name="department">
+            <option value="">Select Department</option>
+            <option value="Cardiology">Cardiology</option>
+            <option value="Neurology">Neurology</option>
+            <option value="Orthopedics">Orthopedics</option>
+            <option value="Pediatrics">Pediatrics</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

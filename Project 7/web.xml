@@ -1,0 +1,13 @@
+<web-app>
+
+<servlet>
+<servlet-name>con</servlet-name>
+<servlet-class>Connection</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>con</servlet-name>
+<url-pattern>/shashank</url-pattern>
+</servlet-mapping>
+
+</web-app>
