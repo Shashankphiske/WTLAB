@@ -20,7 +20,7 @@ public class InsertServlet extends HttpServlet {
         try {
             // Database connection
             Class.forName("com.mysql.jdbc.Driver");
-            try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/pragati", "root", "1234")) {
+            try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sample", "root", "1234")) {
                 String query = "INSERT INTO ebookshop (book_id, book_title, book_author, book_price, quantity) VALUES (?, ?, ?, ?, ?)";
 
                 // Prepare and execute the query
